@@ -4,7 +4,31 @@
 /*this is the start of a comment 
 check the code and video at the bottom to give your website your own pazzaz
 the is the end of a comment, star & slash to the right*/
- tr:hover {
+body {
+    background: #D0E4F5 url("https://c8.alamy.com/comp/BD166C/robert-opie-collector-of-advertising-and-packaging-and-museum-curator-BD166C.jpg") no-repeat scroll 0% 0%;
+    color: #FFF829
+    
+}
+
+thead {
+    color: #005900;
+    background: #FFFCA8;
+    text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px;
+    color: #005900;
+    background: #FFFCA8;
+}
+
+
+tbody {
+    color: #005900;
+    background: #FFFCA8;
+    text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px;
+    color: #005900;
+    background: #FFFCA8;
+    }
+
+
+tr:hover {
     /*background-color: blanchedalmond;*/
     -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);

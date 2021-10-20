@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--The head element holds meta data aka data about the webpage itself  -->
+    <meta charset="UTF-8">
+    <meta http-equi="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <!--<style>
+        * {
+            font-family: cambria, cochin, georgia, times, "Times New Roman"
+        }
+    </style>
+    Add your store title above in between title, and replace the word Document-->
+</head>
+
+<body>
+    <!--Data that you'll be presenting-->
+        <!-- she deleted this whole section and started working with the clas to update table -->
+        <!--<span>Hi</span><span>Hello</span>
+        <div>Bye</div><div>Goodbye</div>
+    </div>
+    <div class = "container"></div>
+        <ol>
+            <li>Comics</li>
+                <ul>
+                    <li>Price: $1,000,000</li>
+                    <li>Desc: PriceLess</li>
+                </ul>
+            <li>Video Games</li>
+            <ul>
+                <li>Price: $2,000,000</li>
+                <li>Desc: PriceLess</li>
+            </ul>
+            <li>MTG Cards</li>
+            <ul>
+                <li>Price: $3,000,000</li>
+                <li>Desc: PriceLess</li>
+            </ul>
+        </ol>
+        <dl>Example to see what happens
+            <dt>terms</dt>
+            <dd>description</dd>-->
+            <!--<dt>Mythic Rare</dt>
+            <dd>Set 2020</dd>
+        </dl>-->
+        <!--This shoul all be commented out or removed -->
+        <!--check out the border you added-->
+        <div class = "container">
+            <h1>The Collector</h1>   
+        </div>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-9">
+                    <table class="table" border="1px">
+                        <thead>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                            <th>Extra1</th>
+                            <th>Extra2</th>
+                        </thead>
+                        <tbody>
+                            <tr id = "Comics">
+                                <td>Comics</td>
+                                <td class = "price">$500</td>
+                                <td>Priceless</td>
+                                <td><input type = "number" name = "" id ="" class = "form control quantity"></td>
+                                <td><input type = "button" value = "Add To Collection" class = "btn btn-info" onclick = "AddToCollection('Comics')"></td>
+                            </tr>
+                            <tr id = "VideoGames">
+                                <td>VideGames</td>
+                                <td class = "price">$1000</td>
+                                <td>Immeasurable</td>
+                                <td><input type = "number" name = "" id ="" class = "form control quantity"></td>
+                                <td><input type = "button" value = "Add To Collection" class = "btn btn-info" onclick = "AddToCollection('VideoGames')"></td>
+                            </tr>
+                            <tr id = "MTGCards">
+                                <td>MTG Cards</td>
+                                <td class = "price">$1234</td>
+                                <td>Varying</td>
+                                <td><input type = "number" name = "" id ="" class = "form control quantity"></td>
+                                <td><input type = "button" value = "Add To Collection" class = "btn btn-info" onclick = "AddToCollection('MTGCards')"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            <div class = "col">
+                <h5>Collection List</h5>
+                <table class = "table" id = "cart">
+                    <thead>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </thead>
+                    <tbody>
+                        <!--Empty, consider filling-->
+                    </tbody>
+                </table>
+                <button class="btn btn-secondary" onclick="CompleteOrder()">Complete Order</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

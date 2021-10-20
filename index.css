@@ -1,0 +1,12 @@
+/* {
+    font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif
+}
+/*this is the start of a comment 
+check the code and video at the bottom to give your website your own pazzaz
+the is the end of a comment, star & slash to the right*/
+ tr:hover {
+    /*background-color: blanchedalmond;*/
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+

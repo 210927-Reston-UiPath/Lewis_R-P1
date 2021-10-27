@@ -1,26 +1,36 @@
 function AddToCollection (name) {
-    debugger; 
-   // alert("you wanna buy " + name); before the let rows, had this as alert, popping up window telling cst "you wanna buy"
-    let cart = document.querySelector('#cart tbody');
-    let newItem = cart.insertRow();
+  debugger; 
 
-    let itemName = newItem.insertCell(0);
-    itemName.innerHTML = name; 
+  let cart = document.querySelector('#cart tbody');
 
-    let elementID = '#' + name.replace(' ', '');
+  let newItem = cart.insertRow();
 
-    let itemPrice = newItem.insertCell(1);
-    itemPrice.innerHTML = document.querySelector(elementID + ' .price').innerHTML;
+  let itemName = newItem.insertCell(0);
+  itemName.innerHTML = name; 
 
-    let itemQuantity = newItem.insertCell(2)
-    itemQuantity.innerHTML = document.querySelector(elementID + ' td .quantity').value;
+  let elementID = '#' + name.replace(' ', '');
 
-    // resets the input value so the quantity of the original order doesn't 'stick'
-    document.querySelector(elementID + ' td .quantity').value = ' ';
-}
+  let itemPrice = newItem.insertCell(1);
+  itemPrice.innerHTML = document.querySelector(elementID + ' .price').innerHTML;
+
+  let itemQuantity = newItem.insertCell(2)
+  itemQuantity.innerHTML = document.querySelector(elementID + ' td .quantity').value;
+
+  let itemSubTotal = newItem.insertCell(3)
+  itemSubTotal.innerHTML = '$' + itemPrice.innerHTML.replace('$', '')*itemQuantity.innerHTML;
+
+  document.querySelector(elementID + ' td .quantity').value = '';
+
+  let Total = 0; 
+  document.querySelectorAll('#cart tbody tr').forEach(row => {
+    Total = Total + parseInt(row.cells[3].innerHTML.replace('$',''));
+  });
+  document.querySelector('#Total').innerHTML = ('$') + Total;
+  }
+
 function CompleteOrder()
 {
-    document.querySelectorAll('#cart tbody tr').foreach(row => row.remove());
-    alert("Thank You For Your Purchase!!! ( ^ w^)/ ")
+  document.querySelectorAll('#cart tbody tr').forEach(row => row.remove());
+  document.querySelector('#Total').innerHTML = ('');
+  alert("Thank You For Your Purchase!!! ( ^ w^)/ ")
 }
-

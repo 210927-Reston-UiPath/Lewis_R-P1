@@ -8,7 +8,6 @@ create table shoppingListTable (
     id serial primary key, 
     productName varchar(100) not null, 
     quantity int not null,
-
     clientID int REFERENCES clientTable(id)
 );
 

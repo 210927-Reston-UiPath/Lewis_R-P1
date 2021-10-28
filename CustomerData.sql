@@ -48,6 +48,9 @@ insert into shoppingListTable(productName, quantity, clientID) values
 insert into shoppingListTable(productName, quantity, clientID) values
 ('Comics', 3, 2);
 
+select * from (clientTable, shoppingListTable)
+where clientID(iD) = clientTable(id);
+
 
 
 
